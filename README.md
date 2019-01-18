@@ -29,6 +29,8 @@
 
 <p class="lead">Nice little webcomponent to create fully customizable square scale transition from an HTMLElement to the entire screen and vice-versa.</p>
 
+[![View demo](http://components.coffeekraken.io/assets/img/view-demo.png)](http://components.coffeekraken.io/app/s-square-scale-transition-component)
+
 ## Table of content
 
 1. **[Demo](http://components.coffeekraken.io/app/s-square-scale-transition-component)**
@@ -138,6 +140,8 @@ s-square-scale-transition {
 ## Advanced usage
 
 For each phases we've seen that you can override the css transition. Now you want maybe to override more than that. Let's say that you want the transition to start from the mouse click position in the `$target` element. Here's how to proceed:
+
+[![View demo](http://components.coffeekraken.io/assets/img/view-demo.png)](http://components.coffeekraken.io/app/s-square-scale-transition-component?demo=advanced)
 
 ### `animateIn`
 

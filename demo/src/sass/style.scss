@@ -1,39 +1,33 @@
-@import 'node_modules/coffeekraken-sugar/index';
-@import 'node_modules/coffeekraken-s-typography-component/index';
-@import '../../../index';
+@import "node_modules/coffeekraken-sugar/index";
+@import "node_modules/coffeekraken-s-typography-component/index";
+@import "node_modules/coffeekraken-s-button-component/index";
 
 @include s-setup(());
 @include s-init();
 @include s-classes();
 
 @include s-typography-classes();
+@include s-button-classes();
 
 body {
-	padding: s-space(bigger);
+  padding: s-space(bigger);
+
+  &.s-square-scale-transition {
+    overflow: hidden;
+  }
 }
 
-s-square-scale-transition {
-  background: red;
+s-square-scale-transition[standard],
+s-square-scale-transition[advanced] {
+  background: s-color(secondary);
+}
+s-square-scale-transition[advanced] {
+  background: s-color(primary);
 
   &.animate-in--phase-1 {
-    transition: height 0s linear 0s,
-                width .4s cubic-bezier(1,0,0,1) 0s;
-  }
-  &.animate-in--phase-2 {
-    transition: top .4s cubic-bezier(1,0,0,1) 0s,
-                height .4s cubic-bezier(1,0,0,1) 0s,
-                left .4s cubic-bezier(1,0,0,1) .2s,
-                width .4s cubic-bezier(1,0,0,1) .2s;
-  }
-
-  &.animate-out--phase-1 {
-    transition: top .4s cubic-bezier(1,0,0,1) .2s,
-                height .4s cubic-bezier(1,0,0,1) .2s,
-                left .4s cubic-bezier(1,0,0,1) 0s,
-                width .4s cubic-bezier(1,0,0,1) 0s;
-  }
-  &.animate-out--phase-2 {
-    transition: height 0s linear .4s,
-                width .4s cubic-bezier(1,0,0,1) 0s;
+    transition: height 0.4s cubic-bezier(1, 0, 0, 1) 0s,
+      width 0.4s cubic-bezier(1, 0, 0, 1) 0s,
+      top 0.4s cubic-bezier(1, 0, 0, 1) 0s,
+      left 0.4s cubic-bezier(1, 0, 0, 1) 0s;
   }
 }

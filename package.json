@@ -1,12 +1,12 @@
 {
-  "name": "coffeekraken-s-component-name-component",
+  "name": "coffeekraken-s-square-scale-transition-component",
   "version": "1.0.0",
-  "description": "component-description",
+  "description": "Nice little webcomponent to create fully customizable square scale transition from an HTMLElement to the entire screen and vice-versa",
   "main": "dist/index.js",
   "homepage": "http://coffeekraken.io",
   "repository": {
     "type": "git",
-    "url": "https://github.com/coffeekraken/s-{component-name}-component"
+    "url": "https://github.com/coffeekraken/s-square-scale-transition-component"
   },
   "watch": {
     "doc:js": {
@@ -47,6 +47,9 @@
     "lint"
   ],
   "keywords": [
+    "square",
+    "scale",
+    "transition",
     "webcomponent",
     "component",
     "html",
@@ -73,7 +76,9 @@
     }
   },
   "dependencies": {
-    "coffeekraken-sugar": "^1.0.42"
+    "coffeekraken-sugar": "^1.0.43",
+    "coffeekraken-s-typography-component": "^1.0.1",
+    "coffeekraken-s-button-component": "^1.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.2",
@@ -96,12 +101,12 @@
     "@babel/plugin-syntax-dynamic-import": "^7.0.0",
     "@babel/plugin-syntax-import-meta": "^7.0.0",
     "@babel/preset-env": "^7.1.0",
+    "axios": "^0.18.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.0",
-    "coffeekraken-code-playground": "^1.0.0",
+    "coffeekraken-code-playground": "^1.0.19",
     "coffeekraken-docblock-to-markdown": "^1.0.0",
-    "coffeekraken-s-typography-component": "^1.0.1",
     "coffeekraken-scripts-stack": "^1.0.1",
     "eslint": "^5.7.0",
     "eslint-config-airbnb": "^17.1.0",
